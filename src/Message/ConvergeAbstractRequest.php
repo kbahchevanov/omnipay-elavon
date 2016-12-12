@@ -9,7 +9,7 @@ abstract class ConvergeAbstractRequest extends \Omnipay\Common\Message\AbstractR
 
     public function getEndpoint()
     {
-        return ($this->getTestMode()) ? $this->testEndpoint : $this->liveEndpoint;
+        return ($this->getSslTestMode()) ? $this->testEndpoint : $this->liveEndpoint;
     }
 
     public function getMerchantId()
