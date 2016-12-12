@@ -101,6 +101,16 @@ abstract class ConvergeAbstractRequest extends \Omnipay\Common\Message\AbstractR
     {
         return $this->setParameter('ssl_last_name', $value);
     }
+    
+    public function getSslTestMode()
+    {
+        return $this->getParameter('ssl_test_mode');
+    }
+
+    public function setSslTestMode($value)
+    {
+        return $this->setParameter('ssl_test_mode', $value);
+    }
 
     protected function createResponse($response)
     {
