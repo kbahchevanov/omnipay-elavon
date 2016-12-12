@@ -27,7 +27,7 @@ class ConvergeAuthorizeRequest extends ConvergeAbstractRequest
                 'ssl_country' => $this->getCard()->getCountry(),
                 'ssl_customer_code' => $this->getDescription(),
                 'ssl_avs_zip' => $this->getCard()->getPostcode(),
-                'ssl_invoice_number' => $this->transactionId(),
+                'ssl_invoice_number' => $this->getTransactionId(),
                 'ssl_result_format' => $this->getSslResultFormat(),
                 'ssl_test_mode' => $this->getSslTestMode(),
                 'ssl_show_form' => $this->getSslShowForm()
